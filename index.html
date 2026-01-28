@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học HTML Forms - Đơn Giản</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>📝 Học HTML Forms</h1>
+        <p>Hướng dẫn đơn giản và dễ hiểu</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#basic">Cơ bản</a>
+        <a href="#inputs">Input Types</a>
+        <a href="#options">Radio & Checkbox</a>
+        <a href="#demo">Form Hoàn Chỉnh</a>
+    </nav>
+
+    <!-- CONTENT -->
+    <main>
+        <!-- 1. FORM CƠ BẢN -->
+        <section id="basic">
+            <h2>1. Form Cơ Bản</h2>
+            
+            <div class="code">
+                <h3>Code:</h3>
+                <pre>&lt;form&gt;
+    &lt;label&gt;Tên:&lt;/label&gt;
+    &lt;input type="text"&gt;
+    
+    &lt;label&gt;Mật khẩu:&lt;/label&gt;
+    &lt;input type="password"&gt;
+    
+    &lt;button&gt;Gửi&lt;/button&gt;
+&lt;/form&gt;</pre>
+            </div>
+
+            <div class="demo">
+                <h3>Demo:</h3>
+                <form>
+                    <label>Tên:</label>
+                    <input type="text" placeholder="Nhập tên của bạn">
+                    
+                    <label>Mật khẩu:</label>
+                    <input type="password" placeholder="Nhập mật khẩu">
+                    
+                    <button type="button">Gửi</button>
+                </form>
+            </div>
+
+            <div class="explain">
+                💡 <strong>Giải thích:</strong> Form bao gồm label (nhãn), input (ô nhập), và button (nút bấm)
+            </div>
+        </section>
+
+        <!-- 2. CÁC LOẠI INPUT -->
+        <section id="inputs">
+            <h2>2. Các Loại Input</h2>
+            
+            <div class="code">
+                <h3>Code:</h3>
+                <pre>&lt;input type="email"&gt;    &lt;!-- Email --&gt;
+&lt;input type="number"&gt;   &lt;!-- Số --&gt;
+&lt;input type="date"&gt;     &lt;!-- Ngày --&gt;
+&lt;input type="color"&gt;    &lt;!-- Màu --&gt;</pre>
+            </div>
+
+            <div class="demo">
+                <h3>Demo:</h3>
+                <form>
+                    <label>Email:</label>
+                    <input type="email" placeholder="email@example.com">
+                    
+                    <label>Tuổi:</label>
+                    <input type="number" min="1" max="100" value="18">
+                    
+                    <label>Ngày sinh:</label>
+                    <input type="date">
+                    
+                    <label>Màu yêu thích:</label>
+                    <input type="color" value="#ff6b6b">
+                </form>
+            </div>
+
+            <div class="explain">
+                💡 <strong>Giải thích:</strong> Mỗi type có chức năng riêng - email tự động kiểm tra @, number chỉ nhập số, date hiển thị lịch
+            </div>
+        </section>
+
+        <!-- 3. RADIO & CHECKBOX -->
+        <section id="options">
+            <h2>3. Radio & Checkbox</h2>
+            
+            <div class="code">
+                <h3>Code:</h3>
+                <pre>&lt;!-- RADIO: Chọn 1 --&gt;
+&lt;input type="radio" name="gender" value="nam"&gt; Nam
+&lt;input type="radio" name="gender" value="nu"&gt; Nữ
+
+&lt;!-- CHECKBOX: Chọn nhiều --&gt;
+&lt;input type="checkbox" value="nhac"&gt; Âm nhạc
+&lt;input type="checkbox" value="the-thao"&gt; Thể thao</pre>
+            </div>
+
+            <div class="demo">
+                <h3>Demo:</h3>
+                <form>
+                    <label>Giới tính (chọn 1):</label>
+                    <div class="options">
+                        <label><input type="radio" name="gender" value="nam"> Nam</label>
+                        <label><input type="radio" name="gender" value="nu"> Nữ</label>
+                        <label><input type="radio" name="gender" value="khac"> Khác</label>
+                    </div>
+                    
+                    <label>Sở thích (chọn nhiều):</label>
+                    <div class="options">
+                        <label><input type="checkbox" value="nhac"> Âm nhạc</label>
+                        <label><input type="checkbox" value="the-thao"> Thể thao</label>
+                        <label><input type="checkbox" value="doc-sach"> Đọc sách</label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="explain">
+                💡 <strong>Giải thích:</strong> Radio có cùng <code>name</code> nên chỉ chọn được 1. Checkbox không cùng name nên chọn nhiều được
+            </div>
+        </section>
+
+        <!-- 4. FORM HOÀN CHỈNH -->
+        <section id="demo">
+            <h2>4. Form Đăng Ký Hoàn Chỉnh</h2>
+            
+            <div class="demo full">
+                <form class="complete-form">
+                    <h3>🎯 Đăng Ký Tài Khoản</h3>
+                    
+                    <label>Tên đăng nhập: <span class="required">*</span></label>
+                    <input type="text" required placeholder="Nhập tên đăng nhập">
+                    
+                    <label>Email: <span class="required">*</span></label>
+                    <input type="email" required placeholder="email@example.com">
+                    
+                    <label>Mật khẩu: <span class="required">*</span></label>
+                    <input type="password" required placeholder="Tối thiểu 6 ký tự">
+                    
+                    <label>Ngày sinh:</label>
+                    <input type="date">
+                    
+                    <label>Giới tính:</label>
+                    <div class="options">
+                        <label><input type="radio" name="gender2" value="nam"> Nam</label>
+                        <label><input type="radio" name="gender2" value="nu"> Nữ</label>
+                    </div>
+                    
+                    <label>Quốc gia:</label>
+                    <select>
+                        <option>Việt Nam</option>
+                        <option>USA</option>
+                        <option>Japan</option>
+                        <option>Korea</option>
+                    </select>
+                    
+                    <label>Giới thiệu bản thân:</label>
+                    <textarea rows="3" placeholder="Viết vài dòng về bạn..."></textarea>
+                    
+                    <label class="checkbox-inline">
+                        <input type="checkbox" required>
+                        Tôi đồng ý với điều khoản <span class="required">*</span>
+                    </label>
+                    
+                    <div class="buttons">
+                        <button type="submit">✅ Đăng ký</button>
+                        <button type="reset">🔄 Xóa</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="explain">
+                💡 <strong>Giải thích:</strong>
+                <ul>
+                    <li><code>required</code>: Bắt buộc phải điền</li>
+                    <li><code>placeholder</code>: Gợi ý cách điền</li>
+                    <li><code>type="submit"</code>: Nút gửi form</li>
+                    <li><code>type="reset"</code>: Nút xóa toàn bộ</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- BẢNG TỔNG KẾT -->
+        <section class="summary">
+            <h2>📚 Tổng Kết Nhanh</h2>
+            <table>
+                <tr>
+                    <th>Thẻ</th>
+                    <th>Công dụng</th>
+                    <th>Ví dụ</th>
+                </tr>
+                <tr>
+                    <td><code>&lt;form&gt;</code></td>
+                    <td>Bọc toàn bộ form</td>
+                    <td><code>&lt;form&gt;...&lt;/form&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;label&gt;</code></td>
+                    <td>Nhãn mô tả</td>
+                    <td><code>&lt;label&gt;Tên:&lt;/label&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;input&gt;</code></td>
+                    <td>Ô nhập liệu</td>
+                    <td><code>&lt;input type="text"&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;button&gt;</code></td>
+                    <td>Nút bấm</td>
+                    <td><code>&lt;button&gt;Gửi&lt;/button&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;select&gt;</code></td>
+                    <td>Menu dropdown</td>
+                    <td><code>&lt;select&gt;&lt;option&gt;...&lt;/option&gt;&lt;/select&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;textarea&gt;</code></td>
+                    <td>Nhập văn bản dài</td>
+                    <td><code>&lt;textarea&gt;&lt;/textarea&gt;</code></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 - Học HTML Forms Dễ Dàng 🚀</p>
+    </footer>
+</body>
+</html>
