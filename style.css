@@ -1,4 +1,3 @@
-/* ===== RESET & BASE ===== */
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +16,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ===== HEADER ===== */
 header {
     background: white;
     text-align: center;
@@ -36,7 +34,6 @@ header p {
     color: #7f8c8d;
 }
 
-/* ===== NAVIGATION ===== */
 nav {
     background: rgba(255,255,255,0.95);
     padding: 15px;
@@ -64,14 +61,12 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* ===== MAIN CONTENT ===== */
 main {
     max-width: 900px;
     margin: 30px auto;
     padding: 0 20px;
 }
 
-/* ===== SECTIONS ===== */
 section {
     background: white;
     margin-bottom: 30px;
@@ -88,7 +83,6 @@ section h2 {
     border-bottom: 3px solid #66bb6a;
 }
 
-/* ===== CODE BLOCKS ===== */
 .code {
     background: #2c3e50;
     border-radius: 10px;
@@ -110,7 +104,6 @@ section h2 {
     line-height: 1.6;
 }
 
-/* ===== DEMO BOXES ===== */
 .demo {
     background: #f8f9fa;
     border: 2px dashed #66bb6a;
@@ -131,7 +124,6 @@ section h2 {
     box-shadow: 0 0 20px rgba(102, 187, 106, 0.2);
 }
 
-/* ===== FORM STYLING ===== */
 form {
     display: flex;
     flex-direction: column;
@@ -174,7 +166,6 @@ textarea {
     min-height: 80px;
 }
 
-/* ===== RADIO & CHECKBOX ===== */
 .options {
     display: flex;
     flex-wrap: wrap;
@@ -219,7 +210,6 @@ textarea {
     height: 18px;
 }
 
-/* ===== BUTTONS ===== */
 button {
     padding: 12px 30px;
     border: none;
@@ -259,7 +249,6 @@ button[type="button"]:hover {
     margin-top: 10px;
 }
 
-/* ===== EXPLAIN BOX ===== */
 .explain {
     background: #fff9e6;
     border-left: 4px solid #ffc107;
@@ -286,13 +275,11 @@ button[type="button"]:hover {
     margin-bottom: 5px;
 }
 
-/* ===== REQUIRED INDICATOR ===== */
 .required {
     color: #e74c3c;
     font-weight: bold;
 }
 
-/* ===== COMPLETE FORM ===== */
 .complete-form {
     max-width: 500px;
     margin: 0 auto;
@@ -305,7 +292,6 @@ button[type="button"]:hover {
     font-size: 1.5rem;
 }
 
-/* ===== TABLE (Summary) ===== */
 .summary table {
     width: 100%;
     border-collapse: collapse;
@@ -331,13 +317,12 @@ button[type="button"]:hover {
 
 .summary code {
     background: #2c3e50;
-    color: #3498db;
+    color: #fafafa;
     padding: 3px 8px;
     border-radius: 4px;
     font-size: 0.9rem;
 }
 
-/* ===== FOOTER ===== */
 footer {
     background: rgba(255,255,255,0.95);
     text-align: center;
@@ -347,7 +332,6 @@ footer {
     font-size: 0.95rem;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.8rem;
